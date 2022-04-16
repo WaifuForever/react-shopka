@@ -2,6 +2,7 @@ import Routes from './routes';
 
 import './styles/colours.scss';
 import './styles/fonts.scss';
+import './styles/global.scss';
 import './styles/spacing.scss';
 
 const App = () => {

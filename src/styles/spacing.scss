@@ -14,13 +14,15 @@ $sizes: (
     'size-8': $base-size * 2,
     'size-9': $base-size * 2.5,
     'size-10': $base-size * 3,
+    'size-12': $base-size * 3.5,
+    'size-11': $base-size * 4,
 );
 
 $sides: inline, inline-start, inline-end, block, block-start, block-end;
 
 @each $size-number, $size-value in $sizes {
     $number: string.slice($size-number, 6);
-    .padding {
+    .pd {
         &-#{$number} {
             padding: $size-value;
         }
@@ -31,7 +33,7 @@ $sides: inline, inline-start, inline-end, block, block-start, block-end;
         }
     }
 
-    .margin {
+    .mg {
         &-#{$number} {
             margin: $size-value;
         }
@@ -41,6 +43,4 @@ $sides: inline, inline-start, inline-end, block, block-start, block-end;
             }
         }
     }
-
-    
 }

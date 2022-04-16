@@ -1,5 +1,7 @@
 //@use "../abstracts/" as *;
 @use 'sass:string';
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Red+Hat+Display:wght@500&display=swap');
 
 $base-size: 1rem;
 
@@ -12,11 +14,13 @@ $sizes: (
     'size-6': $base-size * 1.5,
     'size-7': $base-size * 1.75,
     'size-8': $base-size * 2,
-    'size-9': $base-size * 2.5,
-    'size-10': $base-size * 3,
+    'size-9': $base-size * 2.25,
+    'size-10': $base-size * 2.5,
+    'size-11': $base-size * 2.75,
+    'size-12': $base-size * 3,
 );
 
-$weights: bold, normal, lighter, bolder, 100, 900;
+$weights: bold, normal, lighter, bolder, 100, 400, 500, 900;
 
 @each $size-number, $size-value in $sizes {
     $number: string.slice($size-number, 6);
@@ -27,6 +31,7 @@ $weights: bold, normal, lighter, bolder, 100, 900;
         @each $weight in $weights {
             &-#{$weight}-#{$number} {
                 font-weight: $weight;
+                font-size: $size-value;
             }
         }
     }

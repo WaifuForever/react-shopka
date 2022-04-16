@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100%;
+}
+
+.routes_container {
+    flex-direction: column;
+    width: 100%;
+}

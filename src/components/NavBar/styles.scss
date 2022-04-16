@@ -1,0 +1,55 @@
+.navbar_container {
+    width: inherit;
+    box-sizing: border-box;
+    justify-content: space-between;
+    .logo {     
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+
+            background-color: #2165d1;
+            border-radius: 15%;
+
+            span {
+                text-align: center;
+                font-family: 'Red Hat Display';
+                color: white;
+            }
+        }
+    }
+
+    .block_1 {
+     
+     
+        span {
+            font-family: 'impact';
+        }      
+            
+    }
+
+    .searchButton {
+     
+        justify-content: space-between;
+
+        width: 34.8vw;
+        min-width: 150px;
+
+        height: 48px;
+        border-radius: 20px;
+
+        background-color: #ededf0;
+
+      
+        input {
+            font-family: 'inter';
+
+            width: 100%;
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
