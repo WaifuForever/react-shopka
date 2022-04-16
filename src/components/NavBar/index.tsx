@@ -2,7 +2,7 @@ import './styles.scss';
 
 const NavBar = () => {
     return (
-        <div className="navbar_container pd-inline-3 mg-block-start-4">
+        <div className="navbar_container pd-inline-10 mg-block-start-4">
             <div className="logo">
                 <div className="icon">
                     <span className="font-bold-8">S</span>
@@ -16,7 +16,7 @@ const NavBar = () => {
                 <span className="pd-inline-3 font-500-4">Support</span>
             </div>
 
-            <div className="searchButton mg-inline-5">
+            <div className="searchButton">
                 <div className="mg-inline-4">
                     <svg
                         width="18"
@@ -52,12 +52,16 @@ const NavBar = () => {
                     </svg>
                 </div>
             </div>
-            <div className="block_1">
+            <div className="block_2">
                 <span className="pd-inline-3 font-500-4">Need Help?</span>
-                <span className="pd-inline-3 font-500-4">Sign In</span>
+                <button className="pd-block-1 pd-inline-3">
+                    <span className="pd-inline-3 font-500-4">Sign in</span>
+                </button>
+
                 <svg
-                    width="40"
-                    height="40"
+                    className="pd-inline-3"
+                    width="30"
+                    height="30"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

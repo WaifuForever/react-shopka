@@ -2,8 +2,11 @@
     width: inherit;
     box-sizing: border-box;
     justify-content: space-between;
-    .logo {     
 
+    span {
+        font-family: 'impact';
+    }
+    .logo {
         .icon {
             display: flex;
             justify-content: center;
@@ -22,17 +25,19 @@
         }
     }
 
-    .block_1 {
-     
-     
-        span {
-            font-family: 'impact';
-        }      
-            
+    .block_2 {
+        justify-content: space-between;
+
+        button {
+            border-width: 1px;
+            border-radius: 30px;
+            border-style: solid;
+
+            background-color: #ffffff;
+        }
     }
 
     .searchButton {
-     
         justify-content: space-between;
 
         width: 34.8vw;
@@ -43,7 +48,6 @@
 
         background-color: #ededf0;
 
-      
         input {
             font-family: 'inter';
 
