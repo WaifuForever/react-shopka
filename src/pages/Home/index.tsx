@@ -1,7 +1,9 @@
+import FilterBar from "../../components/FilterBar";
+
 const Home = () => {
     return (
         <div className="home_container">
-            HOME
+            <FilterBar/>
         </div>
     )
 }
