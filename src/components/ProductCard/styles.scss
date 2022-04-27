@@ -1,0 +1,38 @@
+.product_container {
+    flex-direction: column;
+    width: 259px;
+
+    .info {
+        flex-direction: column;
+        font-family: 'Inter';
+
+        .price {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        justify-content: space-evenly;
+        .rating {
+            font-family: 'Roboto';
+            .star {
+                padding-inline: 3px;
+                
+                .overlap {
+                    position: relative;
+                    right: 12px;
+                }
+            }
+        }
+        
+        .watch {
+            justify-content: space-between;
+
+            border-radius: 4px;
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+        }
+    }
+}

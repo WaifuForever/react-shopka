@@ -2,6 +2,7 @@
 @use 'sass:string';
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 $base-size: 1rem;
 
@@ -20,7 +21,7 @@ $sizes: (
     'size-12': $base-size * 3,
 );
 
-$weights: bold, normal, lighter, bolder, 100, 400, 500, 900;
+$weights: bold, normal, lighter, bolder, 100, 400, 500, 700, 900;
 
 @each $size-number, $size-value in $sizes {
     $number: string.slice($size-number, 6);
