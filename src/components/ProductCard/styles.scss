@@ -13,12 +13,12 @@
 
     .footer {
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around;
+
         .rating {
-            
             .star {
                 padding-inline: 3px;
-                
+
                 .overlap {
                     position: relative;
                     right: 12px;
@@ -26,10 +26,9 @@
             }
             span {
                 font-family: 'Roboto';
-                
             }
         }
-        
+
         .watch {
             justify-content: space-between;
 

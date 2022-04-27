@@ -1,5 +1,6 @@
 import FilterBar from '../../components/FilterBar';
 import ProductCard from '../../components/ProductCard';
+import SortBar from '../../components/SortBar';
 
 import './styles.scss';
 
@@ -33,7 +34,6 @@ const data = [
 const Viewer = () => {
     return (
         <div className="list">
-            
             {data.map((item) => (
                 <ProductCard
                     title={item.title}
@@ -51,6 +51,7 @@ const Home = () => {
         <div className="home_container">
             <FilterBar />
             <div className="results_container">
+                <SortBar />
                 <Viewer />
             </div>
         </div>

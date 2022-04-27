@@ -84,9 +84,8 @@ const ProductCard: React.FC<Props> = ({ title, price, shipping, rating }) => {
                     <Star fill={starLevel(3)} />
                     <Star fill={starLevel(4)} />
 
-                    <span className="font-500-3 mg-inline-start-2">
-                        {' '}
-                        {rating}
+                    <span className="font-500-3 mg-inline-start-1">
+                        {rating.toFixed(2)}
                     </span>
                 </div>
                 <div className="watch pd-inline-3 pd-block-1 font-500-3">
