@@ -15,7 +15,7 @@
         width: 100%;
         justify-content: space-evenly;
         .rating {
-            font-family: 'Roboto';
+            
             .star {
                 padding-inline: 3px;
                 
@@ -23,6 +23,10 @@
                     position: relative;
                     right: 12px;
                 }
+            }
+            span {
+                font-family: 'Roboto';
+                
             }
         }
         

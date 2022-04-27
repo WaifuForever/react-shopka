@@ -1,3 +1,8 @@
 .home_container {
     flex-direction: column;
+
+    .list {
+        max-width: 58vw;
+        flex-wrap: wrap;
+    }
 }

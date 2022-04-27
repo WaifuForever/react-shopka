@@ -57,6 +57,13 @@ interface Props {
     rating: number;
 }
 const ProductCard: React.FC<Props> = ({ title, price, shipping, rating }) => {
+    const starLevel = (limit: number) => {
+        return rating - 1 >= limit
+            ? 1
+            : rating - limit >= 0
+            ? rating - limit
+            : 0;
+    };
     return (
         <div className="product_container">
             <img src={product} />
@@ -71,13 +78,16 @@ const ProductCard: React.FC<Props> = ({ title, price, shipping, rating }) => {
             </div>
             <div className="footer">
                 <div className="rating">
-                    <Star fill={rating >= 1 ? 1 : rating} />
-                    <Star fill={rating - 1 >= 1 ? 1 : rating - 1} />
-                    <Star fill={rating - 2 >= 1 ? 1 : rating - 2} />
-                    <Star fill={rating - 3 >= 1 ? 1 : rating - 3} />
-                    <Star fill={rating - 4 >= 1 ? 1 : rating - 4} />
+                    <Star fill={starLevel(0)} />
+                    <Star fill={starLevel(1)} />
+                    <Star fill={starLevel(2)} />
+                    <Star fill={starLevel(3)} />
+                    <Star fill={starLevel(4)} />
 
-                    <span className="font-500-3 mg-inline-start-2"> {rating}</span>
+                    <span className="font-500-3 mg-inline-start-2">
+                        {' '}
+                        {rating}
+                    </span>
                 </div>
                 <div className="watch pd-inline-3 pd-block-1 font-500-3">
                     <img className="mg-inline-end-2" src={heart} alt="" />

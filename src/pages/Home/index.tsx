@@ -10,6 +10,24 @@ const data = [
         shipping: 'Eligible for Shipping To Mars or somewhere else',
         rating: 4.05,
     },
+    {
+        title: 'Vintage Typewriter to post awesome stories about UI design and webdev.',
+        price: 125.5,
+        shipping: 'Eligible for Shipping To Mars or somewhere else',
+        rating: 5,
+    },
+    {
+        title: 'Vintage Typewriter to post awesome stories about UI design and webdev.',
+        price: 10.52,
+        shipping: 'Eligible for Shipping To Mars or somewhere else',
+        rating: 1.65,
+    },
+    {
+        title: 'Vintage Typewriter to post awesome stories about UI design and webdev.',
+        price: 50.5,
+        shipping: 'Eligible for Shipping To Mars or somewhere else',
+        rating: 2.75,
+    },
 ];
 
 const Viewer = () => {
